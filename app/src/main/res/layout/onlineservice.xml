@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/back">
+
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/theme_color"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                app:title="在线客服"
+                app.popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                app.layout_scrollFlags="scroll|enterAlways|Snap"/>
+        </android.support.design.widget.AppBarLayout>
+
+    </android.support.design.widget.CoordinatorLayout>
+
+    <EditText
+        android:id="@+id/shuru"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@color/white"
+        android:hint="开始新对话"
+        android:textColorHint="@color/gray"
+        android:gravity="start"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+    <Button
+        android:id="@+id/edit"
+        android:background="@mipmap/editor"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="11dp" />
+    <Button
+        android:id="@+id/pic"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:background="@mipmap/picture"
+        android:layout_alignTop="@+id/edit"
+        android:layout_toRightOf="@+id/edit"
+        android:layout_toEndOf="@+id/edit" />
+    <Button
+        android:id="@+id/cam"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:background="@mipmap/camera"
+        android:layout_alignTop="@+id/pic"
+        android:layout_toRightOf="@+id/pic"
+        android:layout_toEndOf="@+id/pic" />
+    <Button
+        android:id="@+id/people"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:background="@mipmap/people1"
+        android:layout_alignTop="@+id/cam"
+        android:layout_toRightOf="@+id/cam"
+        android:layout_toEndOf="@+id/cam" />
+    <Button
+        android:id="@+id/send"
+        android:layout_width="50dp"
+        android:layout_height="34dp"
+        android:background="@null"
+        android:text="发送"
+        android:textColor="@color/gray"
+        android:layout_alignTop="@+id/people"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <LinearLayout
+        android:id="@+id/LinearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="56dp"
+        android:layout_above="@+id/shuru"
+        >
+
+        <ListView
+            android:id="@+id/chat_dialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="#0000"
+            android:dividerHeight="8dp"
+            android:scrollbars="none" >
+        </ListView>
+    </LinearLayout>
+
+
+</RelativeLayout>

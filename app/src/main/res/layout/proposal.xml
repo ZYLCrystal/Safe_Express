@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/back">
+
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/theme_color"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                app:title="投诉建议"
+                app.popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                app.layout_scrollFlags="scroll|enterAlways|Snap"/>
+        </android.support.design.widget.AppBarLayout>
+
+    </android.support.design.widget.CoordinatorLayout>
+
+    <EditText
+        android:id="@+id/edittext1"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/white"
+        android:hint="请输入遇到的问题或建议..."
+        android:textColorHint="@color/gray"
+        android:gravity="start"
+        android:layout_marginTop="56dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/add"
+        android:background="@mipmap/add"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignBottom="@+id/edittext1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/phonenumber"
+
+        android:hint="选填，便于我们联系您"
+        android:textColorHint="@color/gray"
+        android:inputType="phone"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="45dp"
+        android:background="@color/white"
+        android:layout_below="@+id/edittext1"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/phonen"
+        android:layout_toEndOf="@+id/phonen" />
+    <TextView
+        android:id="@+id/phonen"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="联系电话"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:background="@color/white"
+        android:layout_alignTop="@+id/phonenumber"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/submit"
+        android:background="@color/theme_color"
+        android:text="提交"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="37dp"
+        android:layout_below="@+id/phonenumber"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+</RelativeLayout>

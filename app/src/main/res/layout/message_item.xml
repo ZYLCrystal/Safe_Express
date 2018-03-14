@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <!-- 定义一个用于显示头像的ImageView -->
+    <ImageView
+        android:id="@+id/imgtou"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:baselineAlignBottom="true"
+        android:paddingLeft="8dp" />
+
+    <!-- 把呢称与消息的文本框设置出来 -->
+
+    <RelativeLayout
+        android:layout_width="320dp"
+        android:layout_height="64dp"
+
+        android:layout_marginLeft="64dp"
+        android:layout_marginStart="64dp">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="8dp"
+            android:paddingTop="5dp"
+            android:textColor="#1D1D1C"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/says"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="8dp"
+            android:paddingTop="5dp"
+            android:textColor="#B4B4B9"
+            android:textSize="14sp"
+            android:layout_below="@+id/name"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:id="@+id/txttime"
+            android:layout_width="20dp"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+    <!--    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="8dp"
+                android:paddingTop="5dp"
+                android:textColor="#1D1D1C"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/says"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="8dp"
+                android:paddingTop="5dp"
+                android:textColor="#B4B4B9"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>-->
+
+</RelativeLayout>

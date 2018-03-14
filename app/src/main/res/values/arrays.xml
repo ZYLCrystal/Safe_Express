@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="Friends_name">
+        <item>Alan</item>
+        <item>Albert</item>
+        <item>Andy</item>
+        <item>Bobby</item>
+        <item>Candy</item>
+        <item>蔡小姐</item>
+        <item>Claudia</item>
+        <item>Cindy</item>
+        <item>大地哥</item>
+        <item>戴老师</item>
+        <item>邓同学</item>
+        <item>王振芳</item>
+        <item>马云</item>
+        <item>马化腾</item>
+        <item>刘强东</item>
+        <item>奶茶妹妹</item>
+        <item>Troye</item>
+        <item>Krystal</item>
+        <item>Victoria</item>
+        <item>Luna</item>
+        <item>Amber</item>
+        <item>郑秀晶</item>
+        <item>宋茜</item>
+        <item>朴善怜</item>
+        <item>刘逸云</item>
+        <item>蓝战非</item>
+        <item>小鬼</item>
+        <item>仓鼠</item>
+        <item>图图</item>
+
+
+        <item>.a</item>
+        <item>;b</item>
+        <item>#c</item>
+
+    </string-array>
+
+
+</resources>

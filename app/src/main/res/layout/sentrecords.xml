@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/back">
+
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/theme_color"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                app:title="交易记录"
+                app.popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                app.layout_scrollFlags="scroll|enterAlways|Snap"/>
+        </android.support.design.widget.AppBarLayout>
+
+    </android.support.design.widget.CoordinatorLayout>
+
+    <EditText
+        android:id="@+id/search1"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@drawable/textviewrd"
+        android:gravity="center"
+        android:hint="搜索"
+        android:textColorHint="@color/gray"
+        android:layout_marginTop="56dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+</RelativeLayout>
